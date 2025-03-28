@@ -73,7 +73,6 @@ function events_v2_theme() {
         'wind_speed' => NULL,
         'humidity' => NULL,
       ],
-//      'template' => 'weather_block.html.twig',
     ],
   ];
 }

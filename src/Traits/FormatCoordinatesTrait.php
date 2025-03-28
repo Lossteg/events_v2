@@ -13,7 +13,7 @@ trait FormatCoordinatesTrait {
    * @return array
    *   Array with 'latitude' and 'longitude' keys, or empty array if invalid.
    */
-  protected function extractCoordinatesFromWKT(string $wkt): array {
+  protected function extractCoordinatesFromWKT(string|null $wkt): array {
     if (empty($wkt)) {
       return [];
     }

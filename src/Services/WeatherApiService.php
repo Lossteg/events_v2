@@ -53,7 +53,7 @@ class WeatherApiService {
    * @return array
    *   Weather data.
    */
-  public function getWeatherByCoordinates(string $wkt): array {
+  public function getWeatherByCoordinates(string|null $wkt): array {
     $coordinates = $this->extractCoordinatesFromWKT($wkt);
 
     if (empty($coordinates)) {
