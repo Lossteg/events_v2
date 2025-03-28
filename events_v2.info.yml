@@ -7,3 +7,4 @@ dependencies:
   - drupal:node
   - address:address
   - geofield:geofield
+  - graphql:graphql

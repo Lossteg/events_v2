@@ -3,18 +3,16 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_end_date
-    - node.type.entity
+    - node.type.event
   module:
     - datetime
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: hXJxlc1Z7-JoU3C6u9B_yygRb-7TC8TkgYkCWDhYYws
-id: node.entity.field_end_date
+id: node.event.field_end_date
 field_name: field_end_date
 entity_type: node
-bundle: entity
+bundle: event
 label: 'End date'
 description: ''
 required: true

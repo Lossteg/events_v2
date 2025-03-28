@@ -8,7 +8,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: JuIyHkklNLpylU_WO0WtaBHGoq1jEBTFL09WdRFUFV4
+  default_config_hash: LKTxMAYs4puWcCETy7q1PNcBRhh-JOB6FM3iYzd34GU
 id: node.field_status
 field_name: field_status
 entity_type: node

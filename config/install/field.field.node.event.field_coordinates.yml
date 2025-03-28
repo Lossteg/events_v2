@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_coordinates
-    - node.type.entity
+    - node.type.event
   module:
     - geocoder_field
     - geofield
@@ -16,7 +16,7 @@ third_party_settings:
     weight: 0
     field: field_location
     skip_not_empty_value: false
-    disabled: false
+    disabled: true
     hidden: true
     providers:
       - nominatim
@@ -26,12 +26,10 @@ third_party_settings:
       handling: preserve
       status_message: true
       log: true
-_core:
-  default_config_hash: jIx1bQQC37DIR_0_pKLjWBcvZuyle2OA7h3TkeOTOh0
-id: node.entity.field_coordinates
+id: node.event.field_coordinates
 field_name: field_coordinates
 entity_type: node
-bundle: entity
+bundle: event
 label: Coordinates
 description: ''
 required: false

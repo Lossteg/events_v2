@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.entity.field_coordinates
-    - field.field.node.entity.field_description
-    - field.field.node.entity.field_end_date
-    - field.field.node.entity.field_location
-    - field.field.node.entity.field_maximum_participants
-    - field.field.node.entity.field_participants
-    - field.field.node.entity.field_start_date
-    - field.field.node.entity.field_status
-    - node.type.entity
+    - field.field.node.event.field_coordinates
+    - field.field.node.event.field_description
+    - field.field.node.event.field_end_date
+    - field.field.node.event.field_location
+    - field.field.node.event.field_maximum_participants
+    - field.field.node.event.field_participants
+    - field.field.node.event.field_start_date
+    - field.field.node.event.field_status
+    - node.type.event
   module:
     - address
     - datetime
@@ -20,11 +20,9 @@ dependencies:
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: aaOaO7v7ZGTl5TkxFRWkHu2a7WKjrxsEMPl3BMvmm-U
-id: node.entity.default
+id: node.event.default
 targetEntityType: node
-bundle: entity
+bundle: event
 mode: default
 content:
   field_coordinates:
@@ -69,7 +67,7 @@ content:
     region: content
   field_participants:
     type: entity_reference_label
-    label: hidden
+    label: above
     settings:
       link: true
     third_party_settings: {  }
@@ -96,4 +94,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  langcode: true

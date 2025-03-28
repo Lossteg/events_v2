@@ -3,16 +3,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_participants
-    - node.type.entity
+    - node.type.event
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: Eqb0k8WplBOn1usuJtQwibHubtVQo-UQIqWF5ivIutQ
-id: node.entity.field_participants
+id: node.event.field_participants
 field_name: field_participants
 entity_type: node
-bundle: entity
+bundle: event
 label: Participants
 description: ''
 required: false

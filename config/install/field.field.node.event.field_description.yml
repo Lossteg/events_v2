@@ -3,16 +3,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_description
-    - node.type.entity
+    - node.type.event
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: kMHZ4ZQtWN5duoHafB4QE02XPaE--kLX43enizHREHw
-id: node.entity.field_description
+id: node.event.field_description
 field_name: field_description
 entity_type: node
-bundle: entity
+bundle: event
 label: Description
 description: ''
 required: true

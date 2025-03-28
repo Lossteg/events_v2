@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - events_v2
+_core:
+  default_config_hash: Jd2_RrTnib68PGXTs7dPkQOh9-TCF4BzGvp5MAdXIDA
+name: default
+label: Default
+schema: node_event_schema
+schema_configuration:
+  alterable_composable:
+    extensions:
+      composable_extension: 0
+      formatted_date: 0
+      routing: 0
+      taxonomy: 0
+      breadcrumb: 0
+      entity_display: 0
+      media: 0
+      image: 0
+      user_login: 0
+      views: 0
+      user: 0
+      language_switch_links: 0
+      entity_query: 0
+      local_tasks: 0
+      reverse_entity_reference: 0
+      field_config: 0
+      menu: 0
+      render_field_item: 0
+persisted_queries_settings: {  }
+endpoint: /graphql
+debug_flag: 1
+caching: true
+batching: true
+disable_introspection: false
+query_depth: null
+query_complexity: null

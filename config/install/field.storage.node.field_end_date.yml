@@ -8,7 +8,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: ufiODBxh6ByGykSnsXLUEnsMQWurbGAvbL3bqGwvGbc
+  default_config_hash: qnb9lRR1PsuAs8b9P_LoKnKPFozJOVdOwtK0PySoiZ0
 id: node.field_end_date
 field_name: field_end_date
 entity_type: node

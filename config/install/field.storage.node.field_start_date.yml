@@ -8,7 +8,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: '-XhKoaVf6sihlV0SXg8UE6rFtnW6FonIQG2CBgwcCKg'
+  default_config_hash: vj_IYgFn8g4ifzGDhqiflnuInmKTRFn9Y12akNreKtg
 id: node.field_start_date
 field_name: field_start_date
 entity_type: node

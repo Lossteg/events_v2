@@ -8,7 +8,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: aUdDGGRXepXfIWyfVuYTA-nNOZ-TlT7w6rhjWLRoUVA
+  default_config_hash: ax68GfBSAo0yzGtlgwhBbOsaVEtTx135IzdhJDu1BPU
 id: node.field_coordinates
 field_name: field_coordinates
 entity_type: node

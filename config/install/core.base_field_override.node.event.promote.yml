@@ -2,16 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.entity
+    - node.type.event
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: 7qELcaUExeCZbmdg9IQYGJ7xoenHFa_c-Thkfu2IDwY
-id: node.entity.promote
+id: node.event.promote
 field_name: promote
 entity_type: node
-bundle: entity
+bundle: event
 label: 'Promoted to front page'
 description: ''
 required: false

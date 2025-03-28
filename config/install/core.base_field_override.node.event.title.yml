@@ -2,16 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.entity
+    - node.type.event
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: jC7yHZXVyXW40aUE_3jd2rpY1u0XIYiERQWmVZVvx74
-id: node.entity.title
+id: node.event.title
 field_name: title
 entity_type: node
-bundle: entity
+bundle: event
 label: Event
 description: ''
 required: true

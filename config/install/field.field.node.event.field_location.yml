@@ -3,18 +3,16 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_location
-    - node.type.entity
+    - node.type.event
   module:
     - address
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: qcdL2Hot8_PFPP6fsNNygFod8yqJLrfpQKiWVT6J-YE
-id: node.entity.field_location
+id: node.event.field_location
 field_name: field_location
 entity_type: node
-bundle: entity
+bundle: event
 label: Location
 description: ''
 required: true

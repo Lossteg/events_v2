@@ -8,7 +8,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: NGt_44q-KKuBMYbwAKW3BHo5pP-ntfAoGkpK5Fi9AkE
+  default_config_hash: 2c4-ycKuKuBPZLMFGmn81GRG0OgjB_-QqaVahYgrXFE
 id: node.field_location
 field_name: field_location
 entity_type: node

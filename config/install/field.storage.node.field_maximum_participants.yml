@@ -7,7 +7,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: ksMmzhd-BEyV-3W7KBmVxW-xZoaw0bNJMGai0i5fn24
+  default_config_hash: '-fGzUDu5jOKzUbI4TR19Td6JOnYScxln_4Bk-eooi38'
 id: node.field_maximum_participants
 field_name: field_maximum_participants
 entity_type: node

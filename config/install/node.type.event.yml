@@ -10,10 +10,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-_core:
-  default_config_hash: zQxlJaJuSp3oXndHt0cCgttAlzb-NwX82hd5NMNjwwU
 name: Event
-type: entity
+type: event
 description: 'For creating and managing events'
 help: null
 new_revision: true

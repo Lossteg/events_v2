@@ -3,16 +3,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_maximum_participants
-    - node.type.entity
+    - node.type.event
   enforced:
     module:
       - events_v2
-_core:
-  default_config_hash: EtemqpbC5NmYKS3az62Ce25tOkIMo4iGQvyS42K8pDw
-id: node.entity.field_maximum_participants
+id: node.event.field_maximum_participants
 field_name: field_maximum_participants
 entity_type: node
-bundle: entity
+bundle: event
 label: 'Maximum participants'
 description: ''
 required: true

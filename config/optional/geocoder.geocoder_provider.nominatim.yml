@@ -5,7 +5,7 @@ dependencies:
     module:
       - events_v2
 _core:
-  default_config_hash: eQAbd3Ph5TlhI6cOwy64PnZwZ3NB2za8HSmoL2BSYDg
+  default_config_hash: TYIn2uN9v65wyYSxRX73Trqhilz46IVXcHuEPcBXkng
 id: nominatim
 label: Nominatim
 plugin: nominatim
