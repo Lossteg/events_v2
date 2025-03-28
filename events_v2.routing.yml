@@ -1,0 +1,7 @@
+events_v2.settings:
+  path: '/admin/config/content/event'
+  defaults:
+    _form: 'Drupal\events_v2\Form\EventSettingsForm'
+    _title: 'Event Settings'
+  requirements:
+    _permission: 'administer site configuration'

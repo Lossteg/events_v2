@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.entity
+  enforced:
+    module:
+      - events_v2
+_core:
+  default_config_hash: kMHZ4ZQtWN5duoHafB4QE02XPaE--kLX43enizHREHw
+id: node.entity.field_description
+field_name: field_description
+entity_type: node
+bundle: entity
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

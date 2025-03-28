@@ -1,0 +1,16 @@
+<div class="weather-block">
+  <h3>{{ 'Weather at Event Location'|t }}</h3>
+
+  {% if icon %}
+    <div class="weather-icon">
+      <img src="{{ icon }}" alt="{{ condition }}">
+    </div>
+  {% endif %}
+
+  <div class="weather-data">
+    <p><strong>{{ 'Temperature:'|t }}</strong> {{ temperature }}°C</p>
+    <p><strong>{{ 'Condition:'|t }}</strong> {{ condition }}</p>
+    <p><strong>{{ 'Wind Speed:'|t }}</strong> {{ wind_speed }} km/h</p>
+    <p><strong>{{ 'Humidity:'|t }}</strong> {{ humidity }}%</p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.entity
+  enforced:
+    module:
+      - events_v2
+_core:
+  default_config_hash: jC7yHZXVyXW40aUE_3jd2rpY1u0XIYiERQWmVZVvx74
+id: node.entity.title
+field_name: title
+entity_type: node
+bundle: entity
+label: Event
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

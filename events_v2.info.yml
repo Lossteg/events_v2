@@ -1,0 +1,9 @@
+name: Events V2
+type: module
+description: 'Custom and fine module for creating and managing events.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node
+  - address:address
+  - geofield:geofield

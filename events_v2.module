@@ -1,0 +1,79 @@
+<?php
+
+use Drupal\events_v2\Enums\EntityBundle;
+use Drupal\events_v2\Enums\EntityType;
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function events_v2_entity_view_alter(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display): void {
+  if ($entity->getEntityTypeId() === EntityType::NODE
+    && $entity->bundle() === EntityBundle::BUNDLE
+  ) {
+    if (!\Drupal::currentUser()->hasRole('administrator')) {
+      $build['field_participants']['#access'] = FALSE;
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function events_v2_entity_extra_field_info() {
+  $extra = [];
+
+  $extra['node']['event']['display']['event_registration_field'] = [
+    'label' => t('Event Registration'),
+    'description' => t('Registration form for the event'),
+    'weight' => 100,
+    'visible' => TRUE,
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function events_v2_node_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->getEntityTypeId() === EntityType::NODE
+      && $entity->bundle() === EntityBundle::BUNDLE
+      && $display->getComponent('event_registration_field')
+    ) {
+    $currentUser = \Drupal::currentUser();
+
+    if (!$currentUser->isAuthenticated()) {
+      $build['event_registration_field'] = [
+        '#markup' => t('Please log in to register for this event.'),
+      ];
+      return;
+    }
+
+    $block_manager = \Drupal::service('plugin.manager.block');
+    $registrationBlock = $block_manager
+      ->createInstance('event_registration_block');
+    $weatherBlock = \Drupal::service('plugin.manager.block')
+      ->createInstance('event_weather_block', []);
+
+    $build['event_registration_field'] = $registrationBlock->build();
+    $build['weather_block'] = $weatherBlock->build();
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function events_v2_theme() {
+  return [
+    'weather_block' => [
+      'variables' => [
+        'temperature' => NULL,
+        'condition' => NULL,
+        'icon' => NULL,
+        'wind_speed' => NULL,
+        'humidity' => NULL,
+      ],
+//      'template' => 'weather_block.html.twig',
+    ],
+  ];
+}

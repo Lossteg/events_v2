@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maximum_participants
+    - node.type.entity
+  enforced:
+    module:
+      - events_v2
+_core:
+  default_config_hash: EtemqpbC5NmYKS3az62Ce25tOkIMo4iGQvyS42K8pDw
+id: node.entity.field_maximum_participants
+field_name: field_maximum_participants
+entity_type: node
+bundle: entity
+label: 'Maximum participants'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

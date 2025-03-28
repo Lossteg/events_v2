@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participants
+    - node.type.entity
+  enforced:
+    module:
+      - events_v2
+_core:
+  default_config_hash: Eqb0k8WplBOn1usuJtQwibHubtVQo-UQIqWF5ivIutQ
+id: node.entity.field_participants
+field_name: field_participants
+entity_type: node
+bundle: entity
+label: Participants
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

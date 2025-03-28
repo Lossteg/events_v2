@@ -1,0 +1,4 @@
+services:
+  events_v2.weather_api:
+    class: Drupal\events_v2\Services\WeatherApiService
+    arguments: ['@http_client_factory', '@config.factory']

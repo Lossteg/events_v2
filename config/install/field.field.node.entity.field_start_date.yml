@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date
+    - node.type.entity
+  module:
+    - datetime
+  enforced:
+    module:
+      - events_v2
+_core:
+  default_config_hash: ePrWx6nz5KjB_FYx15BMb5rN885_cOKq4eXttnk880I
+id: node.entity.field_start_date
+field_name: field_start_date
+entity_type: node
+bundle: entity
+label: 'Start date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
